@@ -14,11 +14,11 @@ import lombok.ToString;
 @AllArgsConstructor
 public class Details {
 
-    @JsonProperty("code")
-    public String code;
+    @JsonProperty("apicode")
+    public String apicode;
     @JsonProperty("message")
     public String message;
-    @JsonProperty("severity")
-    public String severity;
+    @JsonProperty("scoreband")
+    public String scoreband;
 
 }

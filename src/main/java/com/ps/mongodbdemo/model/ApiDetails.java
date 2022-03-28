@@ -13,6 +13,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class ApiDetails {
 
     @Id
+    private String id;
+    
     private String name;
 
     private Object details;
