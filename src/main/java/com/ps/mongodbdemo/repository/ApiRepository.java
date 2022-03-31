@@ -1,11 +1,11 @@
 package com.ps.mongodbdemo.repository;
 
-import com.ps.mongodbdemo.model.ApiDetails;
-import com.ps.mongodbdemo.model.GroceryItem;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
+import com.ps.mongodbdemo.model.ApiDetails;
+
 public interface ApiRepository extends MongoRepository<ApiDetails, String> {
     @Query("{name:'?0'}")
-    ApiDetails  findItemByName(String name);
+    ApiDetails findItemByName(String name);
 }
